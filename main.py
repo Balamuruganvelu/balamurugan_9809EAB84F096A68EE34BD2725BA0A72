@@ -1,10 +1,21 @@
-num = int(input("Enter a number: "))    
-factorial = 1    
-if num < 0:    
-   print(" Factorial does not exist for negative numbers")    
-elif num == 0:    
-   print("The factorial of 0 is 1")    
-else:    
-   for i in range(1,num + 1):    
-       factorial = factorial*i    
-   print("The factorial of",num,"is",factorial)      
+class Player:
+    def play(self):
+        print("The player is playing cricket.")
+
+class Batsman(Player):
+    def play(self):
+        print("The batsman is batting.")
+
+class Bowler(Player):
+    def play(self):
+        print("The bowler is bowling.")
+
+# Create objects of both Batsman and Bowler classes
+batsman = Batsman()
+bowler = Bowler()
+
+# Call the play() method for each object
+batsman.play()
+bowler.play()
+
+
